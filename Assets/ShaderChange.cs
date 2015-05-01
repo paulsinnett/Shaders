@@ -13,6 +13,6 @@ public class ShaderChange : MonoBehaviour {
 
         Color colour = Color.blue;
         colour.r = Mathf.PingPong(Time.time, 1f);
-        renderer.material.SetColor("_MyColour", colour);
+        GetComponent<Renderer>().material.SetColor("_MyColour", colour);
 	}
 }
